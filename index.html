@@ -12,23 +12,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="text-primary-dark-blue bg-neutral-light-gray text-center">
+  <header class="min-h-screen">
+    <!-- navigation -->
+    <nav class="md:hidden py-10">
+      <div class="bg-white fixed top-0 z-50 w-full px-5 py-4 flex items-center justify-between">
+        <a href="#">
+          <img src="images/logo.svg" alt="Logo">
+        </a>
+        <button type="button" class="toggle-button focus:outline-none">
+          <img src="images/icon-hamburger.svg" alt="Hamburger icon">
+        </button>
+      </div>
 
-  <header>
-    <nav>
+      <ul
+        class="hidden toggle-menu fixed top-20 bg-white w-10/12 py-4 left-1/2 transform -translate-x-1/2 rounded shadow-big z-40">
+        <li class="my-4"><a href="#">Home</a></li>
+        <li class="my-4"><a href="#">About</a></li>
+        <li class="my-4"><a href="#">Contact</a></li>
+        <li class="my-4"><a href="#">Blog</a></li>
+        <li class="my-4"><a href="#">Careers</a></li>
+      </ul>
+    </nav>
+
+    <!-- navigation desktop -->
+    <nav class="hidden md:flex justify-between items-center md:px-14 lg:px-28 bg-white">
       <a href="#">
         <img src="images/logo.svg" alt="Logo">
       </a>
 
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
+      <ul class="flex gap-8 items-center font-light text-neutral-grayish-blue h-16 md:gap-2 lg:gap-6">
+        <li class="border-b-gradient py-4"><a href="#">Home</a></li>
+        <li class="border-b-gradient py-4"><a href="#">About</a></li>
+        <li class="border-b-gradient py-4"><a href="#">Contact</a></li>
+        <li class="border-b-gradient py-4"><a href="#">Blog</a></li>
+        <li class="border-b-gradient py-4"><a href="#">Careers</a></li>
       </ul>
 
-      <button type="button">Request Invite</button>
+      <button type="button"
+        class="bg-gradient-to-r from-primary-lime-green to-primary-bright-cyan font-bold text-white px-7 py-2 my-2 rounded-full hover:opacity-75">Request
+        Invite</button>
     </nav>
 
     <h1>Next generation digital banking</h1>
@@ -167,6 +190,8 @@
       Coded by <a href="#">La Paupiette</a>.
     </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

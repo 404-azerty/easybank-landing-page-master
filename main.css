@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.border-b-gradient {
+  border-bottom: 3px solid white;
+}
+
+.border-b-gradient:hover {
+  border-image: linear-gradient(to right, #22d555, #1cb7dc) 1;
+}
