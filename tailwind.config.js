@@ -18,7 +18,11 @@ module.exports = {
       },
       boxShadow: {
         'big': '0px 29px 150px 150px rgba(150,152,167,0.75)'
-      }
+      },
+      backgroundImage: theme => ({
+        'header': `url('./images/bg-intro-mobile.svg')`,
+        'header-desktop': `url('./images/bg-intro-desktop.svg')`
+      })
     },
     fontFamily: {
       'sans': ['Public Sans', ...defaultTheme.fontFamily.sans],

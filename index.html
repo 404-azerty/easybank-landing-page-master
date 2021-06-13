@@ -12,10 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="text-primary-dark-blue bg-neutral-light-gray text-center">
-  <header class="min-h-screen">
+<body class="text-primary-dark-blue bg-neutral-light-gray text-center md:text-left">
+  <header class="h-screen flex flex-col md:h-auto">
     <!-- navigation -->
-    <nav class="md:hidden py-10">
+    <nav class="md:hidden">
       <div class="bg-white fixed top-0 z-50 w-full px-5 py-4 flex items-center justify-between">
         <a href="#">
           <img src="images/logo.svg" alt="Logo">
@@ -36,7 +36,7 @@
     </nav>
 
     <!-- navigation desktop -->
-    <nav class="hidden md:flex justify-between items-center md:px-14 lg:px-28 bg-white">
+    <nav class="hidden md:flex  absolute top-0 z-50 w-full justify-between items-center md:px-14 lg:px-28 bg-white">
       <a href="#">
         <img src="images/logo.svg" alt="Logo">
       </a>
@@ -50,21 +50,41 @@
       </ul>
 
       <button type="button"
-        class="bg-gradient-to-r from-primary-lime-green to-primary-bright-cyan font-bold text-white px-7 py-2 my-2 rounded-full hover:opacity-75">Request
+        class="bg-gradient-to-r from-primary-lime-green to-primary-bright-cyan text-white px-7 py-2 my-2 rounded-full hover:opacity-75">Request
         Invite</button>
     </nav>
 
-    <h1>Next generation digital banking</h1>
+    <div class="relative h-3/5 bg-header bg-no-repeat bg-cover bg-right-bottom md:hidden">
+      <img src="images/image-mockups.png" alt="Mockups illustration" width="767" height="939"
+        class="absolute bottom-10">
+    </div>
 
-    <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting,
-      investing, and much more.</p>
+    <div class="md:h-3/4 md:flex md:pt-16">
+      <div class="md:w-1/2 md:flex md:pl-20 md:pt-12 md:flex-col md:justify-center">
+        <h1 class="text-4xl font-light">Next generation digital banking</h1>
 
-    <button type="button">Request Invite</button>
+        <p class="text-sm mt-4 mb-6 px-4 md:px-0 text-neutral-grayish-blue">Take your financial life online. Your
+          Easybank
+          account
+          will be a
+          one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+
+        <div class="mb-16">
+          <button type="button"
+            class="bg-gradient-to-r from-primary-lime-green to-primary-bright-cyan text-white px-7 py-2 rounded-full hover:opacity-75">Request
+            Invite</button>
+        </div>
+      </div>
+      <div class="hidden md:block h-auto w-1/2 bg-header-desktop bg-cover relative overflow-x-clip">
+        <img src="images/image-mockups.png" alt="Mockups illustration" width="767" height="939"
+          class="absolute -top-20 z-10 -right-14 overflow-y-visible">
+      </div>
+    </div>
   </header>
 
   <main>
 
-    <section>
+    <section class="bg-neutral-light-grayish-blue pt-16">
       <h2>Why choose Easybank?</h2>
 
       <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never

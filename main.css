@@ -9,3 +9,7 @@
 .border-b-gradient:hover {
   border-image: linear-gradient(to right, #22d555, #1cb7dc) 1;
 }
+
+.overflow-x-clip {
+  overflow-x: clip;
+}
