@@ -22,7 +22,7 @@ module.exports = {
       backgroundImage: theme => ({
         'header': `url('./images/bg-intro-mobile.svg')`,
         'header-desktop': `url('./images/bg-intro-desktop.svg')`
-      })
+      }),
     },
     fontFamily: {
       'sans': ['Public Sans', ...defaultTheme.fontFamily.sans],
@@ -30,7 +30,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      height: ['hover']
+      height: ['hover'],
+      fill: ['hover', 'focus']
     },
   },
   plugins: [],
