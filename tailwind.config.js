@@ -29,10 +29,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
-      height: ['hover'],
-      fill: ['hover', 'focus']
-    },
+    extend: {},
   },
   plugins: [],
 }
